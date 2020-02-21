@@ -5,6 +5,9 @@ import Home from '../pages/Home'
 import Food from '../pages/Food'
 import Make from '../pages/Make'
 import Mine from '../pages/Mine'
+// 首页跳转页面路由
+import FeibuCeshi from "../pages/Home/FeibuCeshi"
+import MeiriShipu from "../pages/Home/MeiriShipu"
 import Login from '../pages/Login'
 import FoundNot from '../pages/FoundNot'
 
@@ -37,6 +40,17 @@ const routes = [
         component:Mine
       }
     ]
+  },
+  // 首页跳转路由
+  {
+    path:"/feibuceshi",
+    name:"FeibuCeshi",
+    component:FeibuCeshi,
+  },
+  {
+    path: "/meirishipu",
+    name: "MeiriShipu",
+    component: MeiriShipu
   },
   {
     path: '/login',
