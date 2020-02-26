@@ -1,0 +1,30 @@
+module.exports = {
+    hasMore:true,
+    id:1,
+    data:[
+        {
+            id:1001,
+            title:'红豆薏仁粉',
+            desc:"红豆薏仁粉红豆薏仁粉红豆薏仁粉红豆薏仁粉",
+            price:'248',
+            num:'25848',
+            image:"../image/images/images/images/食疗坊_03.gif"
+        },
+        {
+            id:1002,
+            title:'黑豆薏仁粉',
+            desc:"黑豆薏仁粉黑豆薏仁粉黑豆薏仁粉黑豆薏仁粉",
+            price:'238',
+            num:'21436',
+            image:"../image/images/images/images/食疗坊_07.gif"
+        },
+        {
+            id:1003,
+            title:'黄豆薏仁粉',
+            desc:"黄豆薏仁粉黄豆薏仁粉黄豆薏仁粉黄豆薏仁粉",
+            price:'238',
+            num:'21436',
+            image:"../image/images/images/images/食疗坊_03.gif"
+        },
+    ]
+};
