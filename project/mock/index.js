@@ -23,6 +23,10 @@ app.all('*', function(req, res, next) {
 
 
 
+
+app.use(express.static('static'));
+
+
 app.listen(3500,function(){
     debug(3500);
 })
