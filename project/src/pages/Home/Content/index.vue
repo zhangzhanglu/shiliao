@@ -1,15 +1,15 @@
 <template>
-    <div class="content">
+    <div class="content"  @click="clickList">
         <div class="title">
-            <p>{{title}}</p>
+            <p>{{homedata.title}}</p>
         </div>
         <div class="cont">
             <div class="img">
-                <img src="../images/home031.png" alt="">
+                <img :src="homedata.image" alt="">
             </div>
             <div class="introduce">
-                <p>即使很多标榜“安全”的零食村上春树大额， 也存在很多隐患。</p>
-                <p class="read"><span class="num">11111</span>次阅读</p>
+                <p>{{homedata.content}}</p>
+                <p class="read"><span class="num">{{homedata.readyNum}}</span>次阅读</p>
             </div>
         </div>
     </div>
@@ -20,13 +20,25 @@
         name:"Content",
         data(){
             return{
-
+                
             }
         },
         props:{
+            homedata: {
+                type: Object,
+                default () {
+                    return {}
+                }
+            },
             title: {
                 type: String,
-                default: "标题未定义"
+                default: ""
+            }
+        },
+        methods: {
+            // 点击home的列表页，跳转到具体页面
+            clickList(){
+                this.$router.push({name: 'ContentList',params:{homedata: this.homedata}})
             }
         }
 
