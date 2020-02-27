@@ -1,9 +1,9 @@
 <template>
     <div>
          <div class="headNav">
-            <div class="headNav-left" @click="goback">返回</div>
+            <div class="headNav-left" @click="goback"><i>ic</i>返回</div>
             <div class="headNav-center"> <span>{{title}}</span> </div>
-            <div class="headNav-right"></div>
+            <div class="headNav-right"><i>ic</i></div>
         </div>
         <div class="test-content">
             <h3 class="title">测试说明</h3>

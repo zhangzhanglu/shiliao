@@ -9,17 +9,17 @@
                     <img src="./images/1.png" alt="">
                 </div>
                 <div class="name"><span>小明</span></div>
-                <div class="other"> <router-link to='/information' ><span>健康信息</span></router-link> </div>
+                <div class="other"> <router-link to='/information' ><span>健康信息</span><i>ic</i></router-link> </div>
             </div>
-            <router-link to='/message'><div class="content-message">消息</div></router-link>
-           <router-link to='friend'><div class="content-friend">家人和朋友</div></router-link>
+            <router-link to='/message'><div class="content-message"><i>ic</i>消息</div></router-link>
+           <router-link to='friend'><div class="content-friend"><i>ic</i>家人和朋友</div></router-link>
             <div class="content-other">
-                <router-link to='/minecollect'><p>我的收藏</p></router-link>
-                <router-link to='/mineorder'><p>我的订单</p></router-link>
-                <router-link to='/account'><p>账号和其他</p></router-link>
-                <router-link to='online'><p>在线客服</p></router-link>
-                <router-link to='hellp'><p>帮助和反馈</p></router-link>
-                <router-link to='/setting'><p>设置</p></router-link>
+                <router-link to='/minecollect'><p><i>ic</i>我的收藏</p></router-link>
+                <router-link to='/mineorder'><p><i>ic</i>我的订单</p></router-link>
+                <router-link to='/account'><p><i>ic</i>账号和其他</p></router-link>
+                <router-link to='online'><p><i>ic</i>在线客服</p></router-link>
+                <router-link to='hellp'><p><i>ic</i>帮助和反馈</p></router-link>
+                <router-link to='/setting'><p><i>ic</i>设置</p></router-link>
             </div>
         </div>
     </div>

@@ -1,7 +1,7 @@
 <template>
     <div>
        <div class="headNav">
-            <div class="headNav-left" @click="goback">{{back}}</div>
+            <div class="headNav-left" @click="goback"><i>×</i>{{back}}</div>
             <div class="headNav-center"> <span>{{title}}</span> </div>
             <div class="headNav-right" @click="finishHandle">完成</div>
         </div>

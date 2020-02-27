@@ -8,10 +8,10 @@
                 <img src="../../images/2.png" alt="">
             </div>
             <div class="info">
-                <div class=""><i></i>显示体质<span class="tab"><router-link to=""><i>></i></router-link></span></div>
+                <div class=""><i>ic</i>显示体质<span class="tab"><router-link to=""><i>></i></router-link></span></div>
                 <div>显示体质简介</div>
                 <div  @click="clearLocalsotre"><router-link :to="'/test/'+username" >重新检测体质</router-link></div>
-                <div><i></i><span>慢性病</span><router-link class="tab" :to="'/illness/'+id">
+                <div><i>ic</i><span>慢性病</span><router-link class="tab" :to="'/illness/'+id">
                     <span v-if="illnessArr.length>1">已选择{{illnessArr.length}}项</span>
                     <span v-else>{{illnessArr[0]}}</span>
                     <i>></i></router-link>
