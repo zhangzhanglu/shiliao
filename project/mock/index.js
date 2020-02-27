@@ -6,11 +6,13 @@ var debug = require('debug')('my-application');
 var cors = require('cors');
 
 app.use(cors());
-// post请求数据方案
-app.use(bodyParser.urlencoded({
-    extended:true
-}));
 app.use("/",router);
+app.use(express.static('static'));
+
+// post请求获取参数的方案
+app.use(bodyParser.urlencoded({
+    extended: true
+}));
 
 app.all('*', function(req, res, next) {
     res.header("Access-Control-Allow-Origin", "http://localhost:3500");
@@ -20,12 +22,6 @@ app.all('*', function(req, res, next) {
     res.header("Content-Type", "application/json;charset=utf-8");
     next();
 })
-
-
-
-
-app.use(express.static('static'));
-
 
 app.listen(3500,function(){
     debug(3500);

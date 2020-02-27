@@ -30,6 +30,7 @@ export default {
     position: fixed;
     bottom: 0;
     z-index: 999;
+    overflow: hidden;
 }
 .nav li{
     flex:1; 
