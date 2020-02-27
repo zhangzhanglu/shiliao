@@ -13,7 +13,7 @@ app.use(bodyParser.urlencoded({
 app.use("/",router);
 
 app.all('*', function(req, res, next) {
-    res.header("Access-Control-Allow-Origin", "http://localhost:3300");
+    res.header("Access-Control-Allow-Origin", "http://localhost:3500");
     res.header("Access-Control-Allow-Headers", "Content-Type,Access-Token");
     res.header("Access-Control-Allow-Methods","PUT,POST,GET,DELETE,OPTIONS");
     res.header("X-Powered-By",' 3.2.1');
