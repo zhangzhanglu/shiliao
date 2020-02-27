@@ -13,7 +13,7 @@ import Ceshi from "../pages/Home/FeibuCeshi/Ceshi"
 import CeshiResult from "../pages/Home/FeibuCeshi/CeshiResult"
 import ContentList from "../pages/Home/components/ContentList"
 // 我的
-// import MineCollect from "../pages/Mine/MineCollect"
+import MineCollect from "../pages/Mine/MineCollect"
 
 import Login from '../pages/Login'
 import FoundNot from '../pages/FoundNot'
@@ -91,12 +91,12 @@ const routes = [
     name: "MeiriShipu",
     component: MeiriShipu
   },
-  // 我的页面
-  // {
-  //   path: "/minecollect",
-  //   name: "MineCollect",
-  //   component: MineCollect
-  // },
+  //我的页面
+  {
+    path: "/minecollect",
+    name: "MineCollect",
+    component: MineCollect
+  },
   {
     path: '/login',
     name: 'Login',
