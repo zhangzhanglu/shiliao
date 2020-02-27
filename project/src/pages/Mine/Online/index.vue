@@ -1,12 +1,23 @@
 <template>
     <div>
-        在线客服
+        <div class="head">
+            <HeadNav back='返回' :title="title"/>
+        </div>
     </div>
 </template>
 
 <script>
+import HeadNav from "../HeadNav"
     export default {
-        name:'Online'
+        name:'Online',
+        data(){
+            return{
+                title:'在线客服'
+            }
+        },
+        components:{
+            HeadNav
+        }
     }
 </script>
 

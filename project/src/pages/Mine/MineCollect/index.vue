@@ -1,12 +1,23 @@
 <template>
     <div>
-        我的收藏
+        <div class="head">
+            <HeadNav back='返回' :title="title"/>
+        </div>
     </div>
 </template>
 
 <script>
+import HeadNav from "../HeadNav"
     export default {
-        name:'MineCollect'
+         name:'MineCollect',
+        data(){
+            return{
+                title:'我的收藏'
+            }
+        },
+        components:{
+            HeadNav
+        }
     }
 </script>
 

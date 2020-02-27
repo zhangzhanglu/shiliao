@@ -1,9 +1,7 @@
 <template>
     <div>
         <div class="head">
-            <div class="head-left"></div>
-            <div class="head-center"> <span>我</span> </div>
-            <div class="head-right"></div>
+            <HeadNav :title="title"/>
         </div>
         <div class="content">
             <div class="content-info">
@@ -11,17 +9,17 @@
                     <img src="./images/1.png" alt="">
                 </div>
                 <div class="name"><span>小明</span></div>
-                <div class="other"> <router-link to='/' ><span>健康信息</span></router-link> </div>
+                <div class="other"> <router-link to='/information' ><span>健康信息</span></router-link> </div>
             </div>
-            <div class="content-message">消息</div>
-            <div class="content-friend">家人和朋友</div>
+            <router-link to='/message'><div class="content-message">消息</div></router-link>
+           <router-link to='friend'><div class="content-friend">家人和朋友</div></router-link>
             <div class="content-other">
-                <p>我的收藏</p>
-                <p>我的订单</p>
-                <p>账号和其他</p>
-                <p>在线客服</p>
-                <p>帮助和反馈</p>
-                <p>设置</p>
+                <router-link to='/minecollect'><p>我的收藏</p></router-link>
+                <router-link to='/mineorder'><p>我的订单</p></router-link>
+                <router-link to='/account'><p>账号和其他</p></router-link>
+                <router-link to='online'><p>在线客服</p></router-link>
+                <router-link to='hellp'><p>帮助和反馈</p></router-link>
+                <router-link to='/setting'><p>设置</p></router-link>
             </div>
         </div>
     </div>
@@ -29,22 +27,22 @@
 </template>
 
 <script>
-
+import HeadNav from './HeadNav'
     export default {
-        name:"Mine"
+        name:"Mine",
+        data(){
+            return{
+                title:'我'
+            }
+        },
+        components:{
+            HeadNav
+        }
     }
 </script>
 
 <style scoped>
-.head{
-    width: 100%;
-    height: 50px;
-    background: #43BF92;
-    text-align: center;
-    line-height: 50px;
-    font-size: 20px;
-    color: #fff;    
-}
+
 .content{
     background: #f1f1f1;
     overflow: hidden;
