@@ -1,5 +1,9 @@
 const base ={
     baseUrl:"/api",
+    homeData: "/homedata",
+    ceshiData: "/ceshidata",
+    ceshiResultData: "/ceshiresultdata",
+    meirishipuData: "/meirishipudata",
     physicalSymptoms:"/physicalSymptoms",   //身体症状获取数据
     target:"/target",   //今日目标获取数据
     addPhysicalSymptoms:"/addPhysicalSymptoms",    //身体症状添加数据
