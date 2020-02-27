@@ -11,6 +11,12 @@ import MeiriShipu from "../pages/Home/MeiriShipu"
 import Login from '../pages/Login'
 import FoundNot from '../pages/FoundNot'
 
+//私人定制跳转路由
+import Condition from "../pages/Make/Condition"
+import CurrentEntry from "../pages/Make/CurrentEntry"
+
+import Shopping from "../pages/Shopping"
+import ConfirmOrder from "../pages/Shopping/ConfirmOrder"
 Vue.use(VueRouter)
 
 const routes = [
@@ -38,6 +44,12 @@ const routes = [
         path:"mine",
         name:"Mine",
         component:Mine
+      },
+      // 购物车的路由页面
+      {
+        path:"/shopping",
+        name:"Shopping",
+        component:Shopping
       }
     ]
   },
@@ -61,7 +73,25 @@ const routes = [
     path:"*",
     name:"FoundNot",
     component:FoundNot
+  },
+  //私人定制的路由跳转
+  {
+    path:"/currententry",
+    name:'CurrentEntry',
+    component:CurrentEntry
+  },
+  {
+    path:"/condition",
+    name:'Condition',
+    component:Condition
+  },
+  //确认订单路由
+  {
+    path:"/confirmOrder",
+    name:"ConfirmOrder",
+    component:ConfirmOrder
   }
+  
 ]
 
 const router = new VueRouter({
