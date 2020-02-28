@@ -1,9 +1,9 @@
 const express = require("express");
 const app = express();
-const bodyParser = require("body-parser");
 const router = require("./router");
-var debug = require('debug')('my-application');
+const bodyParser = require("body-parser");
 var cors = require('cors');
+var debug = require('debug')('my-application');
 
 app.use(cors());
 app.use("/",router);

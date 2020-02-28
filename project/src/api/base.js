@@ -3,6 +3,10 @@ const base ={
     login:"/login",
     foodlist:"selectfoodlist",
     fooddesc:"selectfooddesc",
+    simpleTest:'/simpletest',//简易测试接口
+    specialtyTest:'specialtytest',//专业测试接口
+    hellpInfo:"/hellpinfo",//帮助和反馈接口
+    baseUserInfo:'/add/baseUserInfo',//用户基础信息添加
     homeData: "/homedata",
     ceshiData: "/ceshidata",
     ceshiResultData: "/ceshiresultdata",

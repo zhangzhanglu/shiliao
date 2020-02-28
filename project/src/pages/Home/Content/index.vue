@@ -5,7 +5,7 @@
         </div>
         <div class="cont">
             <div class="img">
-                <img :src="homedata.image" alt="">
+                <img src="../images/home031.png" alt="">
             </div>
             <div class="introduce">
                 <p>{{homedata.content}}</p>

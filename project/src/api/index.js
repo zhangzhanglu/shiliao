@@ -17,6 +17,24 @@ const api = {
             params
         })
     },
+    //简易版接口数据
+    getSimpleTest(){
+        return axios.get( base.baseUrl+base.simpleTest);
+    },
+    //专业版接口数据
+    getSpecialtyTest(){
+        return axios.get( base.baseUrl+base.specialtyTest);
+    },
+    //帮助和反馈接口数据
+    getHellpInfo(){
+        return axios.get(base.baseUrl+base.hellpInfo)
+    },
+    //用户基础信息添加
+    getBaseUserInfo(params){
+        return axios.get(base.baseUrl+base.baseUserInfo,{
+            params:params
+        })
+    },
     // 首页主要内容接口
     getHomeData(){
         return axios.get(base.baseUrl + base.homeData);
@@ -32,9 +50,7 @@ const api = {
     // 每日食谱接口
     getMeirishipuData(){
         return axios.get(base.baseUrl + base.meirishipuData);
-    },
-
-    
+    },    
     //获取身体症状数据接口
     getPhysicalSymptoms(){
         return axios.get(base.baseUrl + base.physicalSymptoms);

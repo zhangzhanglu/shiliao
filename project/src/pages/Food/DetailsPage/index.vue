@@ -60,7 +60,7 @@
                     <i class="iconfont icon-jiaru car-icon"></i>
                 </li>
             </ul>
-            <i class="iconfont icon-gouwuche car-icon"></i>
+            <router-link to="/shopping"><i class="iconfont icon-gouwuche car-icon"></i></router-link>
         </div>
     </div>
     </div>

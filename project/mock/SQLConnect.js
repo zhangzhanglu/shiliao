@@ -1,5 +1,5 @@
 const mysql = require("mysql");
-const MySQLObj = {
+const MySQLObj={
     host:"localhost",
     user:"root",
     password:"",
@@ -9,7 +9,8 @@ const MySQLObj = {
 const client = mysql.createConnection(MySQLObj);
 
 function SQLConnect(sql,arr,callback){
-    client.query(sql,arr,(error,result) =>{
+    client.query(sql,arr,(error,result)=>{
+   
         if(error){
             console.log(error);
             return;
@@ -17,5 +18,6 @@ function SQLConnect(sql,arr,callback){
         callback(result);
     })
 }
+module.exports  =SQLConnect
 
-module.exports = SQLConnect
+
