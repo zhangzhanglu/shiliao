@@ -29,6 +29,8 @@ export default {
     display: flex;
     position: fixed;
     bottom: 0;
+    z-index: 100;
+    overflow: hidden;
 }
 .nav li{
     flex:1; 

@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+
 import Layout from '../pages/Layout'
 import Home from '../pages/Home'
 import Food from '../pages/Food'
@@ -8,6 +9,12 @@ import Mine from '../pages/Mine'
 // 首页跳转页面路由
 import FeibuCeshi from "../pages/Home/FeibuCeshi"
 import MeiriShipu from "../pages/Home/MeiriShipu"
+import Ceshi from "../pages/Home/FeibuCeshi/Ceshi"
+import CeshiResult from "../pages/Home/FeibuCeshi/CeshiResult"
+import ContentList from "../pages/Home/components/ContentList"
+// // 我的
+// import MineCollect from "../pages/Mine/MineCollect"
+
 import Login from '../pages/Login'
 import FoundNot from '../pages/FoundNot'
 
@@ -31,8 +38,15 @@ import DidNotTest from "../pages/Mine/Friend/DidNotTest"
 import HaveTest from "../pages/Mine/Friend/HaveTest"
 import AddFriends from '../pages/Mine/Friend/AddFriends'
 
+//私人定制跳转路由
+import Condition from "../pages/Make/Condition"
+import CurrentEntry from "../pages/Make/CurrentEntry"
+
+import Shopping from "../pages/Shopping"
+import ConfirmOrder from "../pages/Shopping/ConfirmOrder"
 
 Vue.use(VueRouter)
+
 
 const routes = [
   {
@@ -59,15 +73,38 @@ const routes = [
         path:"mine",
         name:"Mine",
         component:Mine
+      },
+      // 购物车的路由页面
+      {
+        path:"/shopping",
+        name:"Shopping",
+        component:Shopping
       }
     ]
   },
   // 首页跳转路由
+  // 1、每日测试
   {
-    path:"/feibuceshi",
+    path:"/home/feibuceshi",
     name:"FeibuCeshi",
     component:FeibuCeshi,
   },
+  {
+    path: "/home/feibuceshi/ceshi",
+    name: "Ceshi",
+    component: Ceshi
+  },
+  {
+    path: "/home/feibuceshi/ceshiresult",
+    name: "CeshiResult",
+    component: CeshiResult
+  },
+  {
+    path: "/home/contentlist",
+    name: "ContentList",
+    component: ContentList
+  },
+  // 2、每日食谱
   {
     path: "/meirishipu",
     name: "MeiriShipu",
@@ -89,11 +126,11 @@ const routes = [
     name:"Friend",
     component:Friend
   },
-  {
-    path:"/mineCollect",
-    name:"MineCollect",
-    component:MineCollect
-  },
+  // {
+  //   path:"/mineCollect",
+  //   name:"MineCollect",
+  //   component:MineCollect
+  // },
   {
     path:"/mineOrder",
     name:"MineOrder",
@@ -166,6 +203,12 @@ const routes = [
     component:AddFriends
   },
   
+  // 我的页面
+  {
+    path: "/minecollect",
+    name: "MineCollect",
+    component: MineCollect
+  },
   {
     path: '/login',
     name: 'Login',
@@ -175,8 +218,28 @@ const routes = [
     path:"*",
     name:"FoundNot",
     component:FoundNot
+  },
+  //私人定制的路由跳转
+  {
+    path:"/currententry",
+    name:'CurrentEntry',
+    component:CurrentEntry
+  },
+  {
+    path:"/condition",
+    name:'Condition',
+    component:Condition
+  },
+  //确认订单路由
+  {
+    path:"/confirmOrder",
+    name:"ConfirmOrder",
+    component:ConfirmOrder
   }
+  
 ]
+
+
 
 const router = new VueRouter({
   linkActiveClass:"active",
